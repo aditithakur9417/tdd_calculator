@@ -1,0 +1,119 @@
+/* App.css */
+
+body {
+  background-color: #f0f2f5; 
+  font-family: 'Arial', sans-serif; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  padding: 10px; 
+}
+
+/* Card Design */
+.calculator-card {
+  background-color: #ffffff; 
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px; 
+  text-align: center;
+}
+
+
+.calculator-title {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #333; 
+}
+
+/* Textarea */
+.calculator-input {
+  width: 90%;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  resize: none; 
+  font-size: 1em;
+}
+
+
+.calculator-button {
+  width: 100%;
+  padding: 12px 50px;
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calculator-button:hover {
+  background-color: #0056b3; 
+}
+
+/* Result and Error */
+.calculator-result,
+.calculator-error {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+/* Error Styling */
+.calculator-error {
+  color: red; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calculator-title {
+    font-size: 1.5em; 
+  }
+
+  .calculator-input {
+    height: 60px; 
+  }
+
+  .calculator-button {
+    padding: 10px 0; 
+  }
+
+  .calculator-result,
+  .calculator-error {
+    font-size: 1em; 
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator-title {
+    font-size: 1.2em; 
+  }
+
+  .calculator-input {
+    height: 50px; 
+  }
+
+  .calculator-button {
+    padding: 8px 0;
+  }
+
+  .calculator-result,
+  .calculator-error {
+    font-size: 0.9em; 
+  }
+}
